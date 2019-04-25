@@ -1,0 +1,40 @@
+<idea-plugin>
+    <id>com.phenix.plugin.iphenix.id</id>
+    <name>iPhenix</name>
+    <version>1.0</version>
+    <vendor email="461862064@qq.com" url="https://github.com/zhouphenix/zhouphenix.github.io">Phenix</vendor>
+
+    <description><![CDATA[
+      simple demo.simple demo.simple demo.simple demo.<br>
+      <em>iphenix</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      Nothing.Nothing.Nothing.Nothing.Nothing.Nothing.<br>
+      <em>@iphenix</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.phenix.plugin.iphenix.id" class="com.phenix.plugin.PackingTipsAction" text="Before Packing"
+                description="提示打包需要注意的事项">
+            <add-to-group group-id="BuildMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl B" second-keystroke="ctrl alt B"/>
+        </action>
+    </actions>
+
+</idea-plugin>
